@@ -1,0 +1,29 @@
+<!-- <mat-autocomplete #auto="matAutocomplete">
+  <mat-option *ngFor="let word of dictionary" [value]="word">
+    {{ word }}
+  </mat-option>
+</mat-autocomplete> -->
+<div class="container">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Part ID</th>
+        <th>Brand</th>
+        <th>Name</th>
+        <th>Stock</th>
+        <th>Price</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let part of parts">
+        <th scope="row">{{ part.id }}</th>
+        <td>{{ part.brand }}</td>
+        <td>{{ part.name }}</td>
+        <td>{{ part.stock }}</td>
+        <td>{{ part.price }}</td>
+        <td>{{ part.description }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
