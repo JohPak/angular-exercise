@@ -14,10 +14,18 @@ import { PartsInterface } from '../../PartsInterface';
 export class PartsComponent implements OnInit {
   // exports parts which is the type of PartsInterface. Use the name "parts" in html side.
   parts: PartsInterface[] = PARTS;
-  
+
+  // Shows only parts of clicked brand name
+  showByBrand(clickedBrand: string) {
+    let selectedBrand = this.parts.filter(function (el) {
+      return el.brand == clickedBrand;
+    })
+    this.parts = selectedBrand;
+  }
+
   constructor() { }
   
   ngOnInit(): void {
   }
-
+  
 }

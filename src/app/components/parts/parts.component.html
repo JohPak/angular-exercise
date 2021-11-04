@@ -13,7 +13,12 @@
     <tbody>
       <tr *ngFor="let part of parts">
         <th scope="row">{{ part.id }}</th>
-        <td title="Show all parts from {{ part.brand }}">{{ part.brand }}</td>
+        <td
+          title="Show all parts from {{ part.brand }}"
+          (click)="showByBrand(part.brand)"
+        >
+          {{ part.brand }}
+        </td>
         <td>{{ part.name }}</td>
         <td>{{ part.stock }}</td>
         <td>{{ part.price.toFixed(2) }}&nbsp;€</td>
