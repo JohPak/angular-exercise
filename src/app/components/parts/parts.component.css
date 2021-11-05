@@ -1,0 +1,6 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+.bold-hover:hover {
+  background-color: #dee2e6;
+}

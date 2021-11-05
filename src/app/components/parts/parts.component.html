@@ -2,11 +2,11 @@
   <table class="table table-hover">
     <thead>
       <tr>
-        <th>Part ID</th>
-        <th>Brand</th>
-        <th>Name</th>
-        <th>Stock</th>
-        <th>Price</th>
+        <th (click)="sortBy('id')" class="cursor-pointer bold-hover">Part ID</th>
+        <th (click)="sortBy('brand')" class="cursor-pointer bold-hover">Brand</th>
+        <th (click)="sortBy('name')" class="cursor-pointer bold-hover">Name</th>
+        <th (click)="sortBy('stock')" class="cursor-pointer bold-hover">Stock</th>
+        <th (click)="sortBy('price')" class="cursor-pointer bold-hover">Price</th>
         <th>Description</th>
       </tr>
     </thead>
@@ -16,6 +16,7 @@
         <td
           title="Show all parts from {{ part.brand }}"
           (click)="showByBrand(part.brand)"
+          class="cursor-pointer bold-hover"
         >
           {{ part.brand }}
         </td>

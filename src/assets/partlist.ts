@@ -50,5 +50,21 @@ export const PARTS: PartsInterface[] = [
         price: 5.90,
         description: "Reinforced drill bit to resist compression, torsion and bending loads generated while drilling."
     },
+    {
+        id: 339988,
+        brand: "Part Makers Company",
+        name: "Basic screw 10mm",
+        stock: 3317,
+        price: 0.07,
+        description: "Plain basic screw for wood and plastic."
+    },
+    {
+        id: 311087,
+        brand: "Part Makers Company",
+        name: "Basic screw 20mm",
+        stock: 2719,
+        price: 0.08,
+        description: "Plain basic screw for wood and plastic."
+    },
 
 ]
